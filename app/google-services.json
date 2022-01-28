@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "486731324549",
+    "project_id": "madosevaluationapp",
+    "storage_bucket": "madosevaluationapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486731324549:android:c34fee9daeaa4e1ba09dec",
+        "android_client_info": {
+          "package_name": "com.prospect.madosevaluationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486731324549-sudc1g16684g052i1ah9ah38sinornp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgI4r_FGxj31N7QOJl3_hjmXx_YYWyM4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486731324549-sudc1g16684g052i1ah9ah38sinornp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
