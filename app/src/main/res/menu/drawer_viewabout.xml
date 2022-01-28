@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:layout_gravity="start"
+    android:background="@color/white"
+    android:choiceMode="singleChoice"
+    android:divider="@android:color/darker_gray"
+    android:paddingTop="?attr/actionBarSize"
+    android:dividerHeight="2dp"
+
+    >
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashbord"
+            android:icon="@drawable/ic_baseline_dashboard_24"
+            android:title="My DashBord"
+            android:textColor="@color/black"
+            />
+        <item
+            android:id="@+id/addpost"
+            android:icon="@drawable/ic_baseline_post_add_24"
+            android:title="Add Posts"
+            android:textColor="@color/black"
+            />
+        <item
+            android:id="@+id/Usersmanagment"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:title="my Users"
+            android:textColor="@color/black"
+            />
+        <item
+            android:id="@+id/productrate"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+            android:title="my Product Rate"
+            android:textColor="@color/black"
+            />
+
+
+
+
+    </group>
+
+</menu>

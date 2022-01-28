@@ -4,20 +4,57 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_baseline_local_fire_department_24"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MadosEvaluationApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.Spash"
+            android:theme="@style/NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.UseUi.UserDashbord"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.About"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.AddPost"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.AddRole"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.Dashbord"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.Login"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.ProductRate"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.UserManagment"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+
     </application>
 
 </manifest>
