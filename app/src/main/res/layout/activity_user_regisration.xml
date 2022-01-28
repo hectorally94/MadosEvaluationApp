@@ -147,7 +147,7 @@ tools:context=".ui.UseUi.UserRegisration">
 
 
     <Button
-        android:id="@+id/ButtonUploadImage"
+        android:id="@+id/btnregister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="false"
