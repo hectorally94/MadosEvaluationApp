@@ -1,9 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.UseUi.UserRegisration">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#ffffff"
+android:fitsSystemWindows="true"
+tools:context=".ui.UseUi.UserRegisration">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="56dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:padding="16dp"
+    android:background="#ffffff"
+    tools:context=".Activity.SellerRegistration">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/USerimageURL"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="15dp"
+        android:src="@drawable/ic_launcher_background"
+        android:textAlignment="center"
+        android:background="#ffffff"
+        tools:ignore="RtlCompat" />
+
+
+    <Button
+        android:id="@+id/ButtonChooseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginVertical="20dp"
+        android:text="Add your  picture"
+        android:layout_below="@id/USerimageURL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#445BC1"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:id="@+id/textInput3"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="@color/purple_500"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:inputType="text"
+            android:id="@+id/idusername"
+            android:textColor="#000"
+            android:textColorHint="@color/purple_500"
+            app:backgroundTint="#ffffff"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:id="@+id/textInput4"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="@color/purple_500"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" your google email "
+            android:inputType="text"
+            android:id="@+id/idemail"
+            android:textColor="#000"
+            app:backgroundTint="@color/white"
+            android:textColorHint="@color/purple_500"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+
+        android:id="@+id/textInput7"
+
+        app:passwordToggleEnabled="true"
+
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/purple_500"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:id="@+id/loginPass"
+            android:textColor="#000"
+            app:backgroundTint="#ffffff"
+            android:textColorHint="@color/purple_500"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="Bi" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/idwhatsappnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint=" WhatSapp Number"
+                app:backgroundTint="#ffffff"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/ButtonUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/USerimageURL"
+        android:text="Register"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:onClick="uploadT"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        tools:ignore="ExtraText,OnClick" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/ButtonUploadImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+</LinearLayout>
+</ScrollView>
