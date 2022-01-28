@@ -26,6 +26,7 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.prospect.madosevaluationapp.R;
 import com.prospect.madosevaluationapp.ui.UseUi.UserDashbord;
+import com.prospect.madosevaluationapp.ui.UseUi.UserRegisration;
 
 public class Login extends AppCompatActivity {
     //declare our elements
@@ -54,7 +55,17 @@ public class Login extends AppCompatActivity {
                 login();
             }
         });
+        textViewctrease.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentResident = new Intent(Login.this, UserRegisration.class);
+                intentResident.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intentResident);
+                finish();
+            }
+        });
     }
+
     // method to login to firebase
     private void login() {
         //store the users input
